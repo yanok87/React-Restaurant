@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Restaurant/build/static/js/main.2616a465.chunk.js",
+    "main.js.map": "/Restaurant/build/static/js/main.2616a465.chunk.js.map",
+    "runtime-main.js": "/Restaurant/build/static/js/runtime-main.a53aede6.js",
+    "runtime-main.js.map": "/Restaurant/build/static/js/runtime-main.a53aede6.js.map",
+    "static/js/2.5041a082.chunk.js": "/Restaurant/build/static/js/2.5041a082.chunk.js",
+    "static/js/2.5041a082.chunk.js.map": "/Restaurant/build/static/js/2.5041a082.chunk.js.map",
+    "index.html": "/Restaurant/build/index.html",
+    "precache-manifest.6cd5f11f1e617fad58563caf86e65aa5.js": "/Restaurant/build/precache-manifest.6cd5f11f1e617fad58563caf86e65aa5.js",
+    "service-worker.js": "/Restaurant/build/service-worker.js",
+    "static/js/2.5041a082.chunk.js.LICENSE.txt": "/Restaurant/build/static/js/2.5041a082.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a53aede6.js",
+    "static/js/2.5041a082.chunk.js",
+    "static/js/main.2616a465.chunk.js"
+  ]
+}
