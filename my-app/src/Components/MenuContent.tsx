@@ -14,7 +14,6 @@ export const menuContent = [{
         subIngredientProducts: ['champignons']
       }
     ],
-    products: 'flour, water, tomatoes, garlic, champignons',
     id: 'id-1'
   },
   {
@@ -33,7 +32,6 @@ export const menuContent = [{
         subIngredientProducts: ['milk']
       }
     ],
-    products: 'flour, water, tomatoes, garlic, milk',
     id: 'id-2'
   }, 
   {
@@ -52,7 +50,6 @@ export const menuContent = [{
         subIngredientProducts: ['pork']
       }
     ],
-    products: 'flour, water, tomatoes, garlic, pork',
     id: 'id-3'
   }, 
   ]

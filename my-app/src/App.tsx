@@ -46,7 +46,10 @@ return (
           }): searchResults.map((menuItem: IMenuItem)=>{
             return <FoodCard id={menuItem.id} key={menuItem.id} foodName={menuItem.foodName} foodIngredients={menuItem.foodIngredients}/>
           })}
-          {searchResults.length === 0 && <Product>We have no dishes with "{searchValue}"</Product>}
+          {searchResults.length === 0 && 
+          <Wrapper style={{textAlign: 'center'}}>
+          <Product>We have no dishes with "{searchValue}"</Product>
+          </Wrapper>}
           </MenuWrapper>
           </ContentWrapper>
      </RestaurantWrapper>

@@ -35,7 +35,6 @@ const menuItem1 = {
             subIngredientProducts: product1.split(',')
         }
     ],
-    products: product1,
     id: shortid.generate(),
 }
 
@@ -51,7 +50,6 @@ const menuItem2 = {
             subIngredientProducts: product2.split(',')
         }
     ],
-    products: `${product1},${product2}`,
     id: shortid.generate(),
 }
 
@@ -71,7 +69,6 @@ const menuItem3 = {
             subIngredientProducts: product3.split(',')
         }
     ],
-    products: `${product1},${product2},${product3}`,
     id: shortid.generate(),
 }
 
