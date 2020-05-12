@@ -14,7 +14,8 @@ export const menuContent = [{
         subIngredientProducts: ['champignons']
       }
     ],
-    id: 'id-1'
+    id: 'id-1',
+    highlight: '',
   },
   {
     foodName: 'Pizza Margherita',
@@ -32,7 +33,8 @@ export const menuContent = [{
         subIngredientProducts: ['milk']
       }
     ],
-    id: 'id-2'
+    id: 'id-2',
+    highlight: '',
   }, 
   {
     foodName: 'Pizza Prosciutto',
@@ -50,7 +52,9 @@ export const menuContent = [{
         subIngredientProducts: ['pork']
       }
     ],
-    id: 'id-3'
+    id: 'id-3',
+    highlight: '',
+
   }, 
   ]
   console.log('Hello Maksym! :)');

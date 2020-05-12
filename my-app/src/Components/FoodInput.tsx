@@ -36,6 +36,8 @@ const menuItem1 = {
         }
     ],
     id: shortid.generate(),
+    highlight: '',
+
 }
 
 const menuItem2 = {
@@ -51,6 +53,8 @@ const menuItem2 = {
         }
     ],
     id: shortid.generate(),
+    highlight: '',
+
 }
 
 const menuItem3 = {
@@ -70,6 +74,7 @@ const menuItem3 = {
         }
     ],
     id: shortid.generate(),
+    highlight: '',
 }
 
 const selectedMenuItem = () => {

@@ -26,6 +26,25 @@ const handleSearchChange = (e: ChangeEvent<HTMLInputElement>) => {
  setSearchValue(e.target.value);
 };
 
+const isProductHighlighted = (searchResults: IMenuItem[]) => {
+  if(searchResults.length > 0){
+    for(let i = 0; i < searchResults.length; i++){
+      let ingredients = searchResults[i].foodIngredients;
+      for (let j = 0; j < ingredients.length; j++){
+        let subingredientProducts = ingredients[j].subIngredientProducts;
+          for (let h = 0; h < subingredientProducts.length; h++){
+            let product = subingredientProducts[h];
+            if(product.includes(searchValue)){
+              return product;
+            };
+          }
+      }
+    }
+  } else return '';
+}
+
+console.log('isProductHighlighted(searchResults) :>> ', isProductHighlighted(searchResults));
+
 return (
      <Body>
      <RestaurantWrapper>
@@ -42,9 +61,9 @@ return (
         </Wrapper>
         <MenuWrapper>
           {searchValue === "" ? menu.map((menuItem: IMenuItem)=>{
-            return <FoodCard id={menuItem.id} key={menuItem.id} foodName={menuItem.foodName} foodIngredients={menuItem.foodIngredients}/>
+            return <FoodCard id={menuItem.id} key={menuItem.id} foodName={menuItem.foodName} foodIngredients={menuItem.foodIngredients} highlight={''}/>
           }): searchResults.map((menuItem: IMenuItem)=>{
-            return <FoodCard id={menuItem.id} key={menuItem.id} foodName={menuItem.foodName} foodIngredients={menuItem.foodIngredients}/>
+            return <FoodCard id={menuItem.id} key={menuItem.id} foodName={menuItem.foodName} foodIngredients={menuItem.foodIngredients} highlight={isProductHighlighted(searchResults) || ''}/>
           })}
           {searchResults.length === 0 && 
           <Wrapper style={{textAlign: 'center'}}>
