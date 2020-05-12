@@ -34,16 +34,18 @@ const isProductHighlighted = (searchResults: IMenuItem[]) => {
         let subingredientProducts = ingredients[j].subIngredientProducts;
           for (let h = 0; h < subingredientProducts.length; h++){
             let product = subingredientProducts[h];
-            if(product.includes(searchValue)){
+            if(searchValue !== '' && product.includes(searchValue)){
+              console.log('productHL :>>',product);
+              console.log('searchValue :>> ', searchValue);
               return product;
             };
           }
       }
     }
-  } else return '';
+  } else return null;
 }
 
-console.log('isProductHighlighted(searchResults) :>> ', isProductHighlighted(searchResults));
+console.log('menu :>> ', menu);
 
 return (
      <Body>
@@ -61,7 +63,7 @@ return (
         </Wrapper>
         <MenuWrapper>
           {searchValue === "" ? menu.map((menuItem: IMenuItem)=>{
-            return <FoodCard id={menuItem.id} key={menuItem.id} foodName={menuItem.foodName} foodIngredients={menuItem.foodIngredients} highlight={''}/>
+            return <FoodCard id={menuItem.id} key={menuItem.id} foodName={menuItem.foodName} foodIngredients={menuItem.foodIngredients} />
           }): searchResults.map((menuItem: IMenuItem)=>{
             return <FoodCard id={menuItem.id} key={menuItem.id} foodName={menuItem.foodName} foodIngredients={menuItem.foodIngredients} highlight={isProductHighlighted(searchResults) || ''}/>
           })}

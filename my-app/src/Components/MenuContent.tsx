@@ -15,7 +15,6 @@ export const menuContent = [{
       }
     ],
     id: 'id-1',
-    highlight: '',
   },
   {
     foodName: 'Pizza Margherita',
@@ -34,7 +33,6 @@ export const menuContent = [{
       }
     ],
     id: 'id-2',
-    highlight: '',
   }, 
   {
     foodName: 'Pizza Prosciutto',
@@ -53,7 +51,6 @@ export const menuContent = [{
       }
     ],
     id: 'id-3',
-    highlight: '',
 
   }, 
   ]
