@@ -8,7 +8,6 @@ export interface IMenuItem {
     products?: string;
     id: string;
     highlight?: string;
-
 }
 
 export interface ISubIngredient {
@@ -25,7 +24,7 @@ const [showProducts, setShowProducts] = useState(false);
         {foodIngredients.map((ingredient:ISubIngredient, index)=>{
            return <div key={index}> <Ingredients >{ingredient.subIngredientName}</Ingredients>
             {showProducts && ingredient.subIngredientProducts.map((product:string, index) => {
-            return <Product key={index} style={{color: highlight === product.trim() ? 'red' : 'black' }}>{product.trim()}</Product>
+            return <Product key={index} style={{color: highlight && product.trim().includes(highlight) ? 'red' : 'black' }}>{product.trim()}</Product>
             })} </div>
         })}
     </CardWrapper>
