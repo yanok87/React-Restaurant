@@ -54,4 +54,3 @@ export const menuContent = [{
 
   }, 
   ]
-  console.log('Hello Maksym! :)');

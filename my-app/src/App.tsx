@@ -45,8 +45,6 @@ const isProductHighlighted = (searchResults: IMenuItem[]) => {
   } else return null;
 }
 
-console.log('menu :>> ', menu);
-
 return (
      <Body>
      <RestaurantWrapper>
